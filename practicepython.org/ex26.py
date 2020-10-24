@@ -24,14 +24,18 @@ def check_winner(game):
 
     print("No winner, sorry!")
     
+def main():
+    my_game = [[1, 2, 0],[2, 1, 0],[2, 1, 1]]
+    check_winner (my_game)
 
-my_game = [[1, 2, 0],[2, 1, 0],[2, 1, 1]]
-check_winner (my_game)
+    #more test cases:
+    winner_is_2 = [[2, 2, 0],	[2, 1, 0],	[2, 1, 1]]
+    winner_is_1 = [[1, 2, 0],	[2, 1, 0],	[2, 1, 1]]
+    winner_is_also_1 = [[0, 1, 0],	[2, 1, 0],	[2, 1, 1]]
+    no_winner = [[1, 2, 0],	[2, 1, 0],	[2, 1, 2]]
+    also_no_winner = [[1, 2, 0],	[2, 1, 0],	[2, 1, 0]]    
+    
+    #check_winner (winner_is_1)
 
-#test cases:
-winner_is_2 = [[2, 2, 0],	[2, 1, 0],	[2, 1, 1]]
-winner_is_1 = [[1, 2, 0],	[2, 1, 0],	[2, 1, 1]]
-winner_is_also_1 = [[0, 1, 0],	[2, 1, 0],	[2, 1, 1]]
-no_winner = [[1, 2, 0],	[2, 1, 0],	[2, 1, 2]]
-also_no_winner = [[1, 2, 0],	[2, 1, 0],	[2, 1, 0]]    
-#check_winner (winner_is_1)
+if __name__ == "__main__":
+    main()
